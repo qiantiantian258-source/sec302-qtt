@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-column layout</title>
+    <!--Extrenal CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=BBH+Sans+Hegarty&family=Caprasimo&display=swap" rel="stylesheet">
+       
+</head>
+<body>
+    <div class="homepage">
+        <aside class="sidepanel">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="joinus.html">Join Us</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="center">
+          
+            <section class="title4">
+                <h1>Join us</h1>
+                <h2>Do you have second-hand items you want you sell? Create your profile and join our community!</h2>
+                <h3>Please fill out the form below to create your account. If you also have iten you'd like to sell here, please upload its detail as well. Once your item has been reviewed and approved, we will contact you by email within seven days.</h3>
+            </section>
+
+            <div class="form">
+            <form action="thankyou.html" method="post">
+                <label for="username">Username</label>
+                <input type="text" id="register-username" name="username" placeholder="Username" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="register-email" name="email" placeholder="Email" required>
+
+                <label for="bio">Bio</label>
+                <input type="text" id="bio" name="bio" placeholder="Bio" required>
+
+                <label for="introduction">Description</label>
+                <input type="text" id="register-introduction" name="introduction" placeholder="Description">
+
+                <label for="name">Item Image</label>
+                <input type="file" id="register-images" name="images" accept="image/png, image/jpeg"/>
+
+                <label for="price">Expected Price</label>
+                <input type="text" id="register-price" name="price" placeholder="Expected Price">
+
+                <label for="story">Item memories</label>
+                <textarea name="memories" id="register-memories" rows="10" cols="50"></textarea>
+
+        
+                <button type="submit" class="register-button">Submit</button>
+                
+            </form>
+            </div>
+
+            <section class="title4">
+                <h2>Already have an account?</h2>
+                <h3>Log in and submit your item!</h3>
+
+                <div class="form">
+                    <form action="log in.html" method="get">
+                    <label for="username">Username</label>
+                    <input type="text" id="login-username" name="username" placeholder="Username" required>
+                    
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="login-email" name="email" placeholder="Email" required>
+
+                    <label for="introduction">Description</label>
+                    <input type="text" id="login-introduction" name="introduction" placeholder="Description">
+
+                    <label for="name">Item Image</label>
+                    <input type="file" id="login-images" name="images" accept="image/png, image/jpeg"/>
+
+                    <label for="price">Expected Price</label>
+                    <input type="text" id="login-price" name="price" placeholder="Expected Price">
+
+                    <label for="story">Item memories</label>
+                    <textarea name="memories" id="login-memories" rows="10" cols="50"></textarea>
+
+                    <button type="submit" class="login-button">Submit</button>
+                </form>
+                </div>
+
+            </section>   
+
+
+
+
+        </main>
+
+    </div>
+
+    
+</body>
+</html>
